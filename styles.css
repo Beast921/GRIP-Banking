@@ -19,6 +19,14 @@ body {
   padding-bottom: 2rem;
 }
 
+.heading {
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 6rem;
+  margin-bottom: 2rem;
+}
+
 table {
   color: #cef7d4;
   margin-left: auto;
