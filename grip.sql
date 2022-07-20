@@ -29,7 +29,7 @@ CREATE TABLE `transaction` (
   `amount` int(8) NOT NULL,
   `datetime` datetime NOT NULL DEFAULT current_timestamp(),
   PRIMARY KEY (`sno`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,6 +38,7 @@ CREATE TABLE `transaction` (
 
 LOCK TABLES `transaction` WRITE;
 /*!40000 ALTER TABLE `transaction` DISABLE KEYS */;
+INSERT INTO `transaction` VALUES (25,'PATRICK','TRAVIS',10,'2022-07-20 20:48:26'),(26,'TRAVIS','PATRICK',10,'2022-07-20 20:48:47');
 /*!40000 ALTER TABLE `transaction` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -63,7 +64,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'PATRICK','patrick@gmail.com',1000000),(2,'TRAVIS','travis@gmail.com',30000),(3,'RYAN','ryan@gmail.com',800000),(4,'LOU','lou@gmail.com',32000),(5,'BRUCE','bruce@gmail.com',6000000),(6,'WALTER','walter@gmail.com',700000),(7,'JESSE','jesse@gmail.com',50000),(8,'SAUL','saul@gmail.com',100000),(9,'MORBIUS','morbius@gmail.com',80000),(10,'BILLY','billy@gmail.com',50000);
+INSERT INTO `user` VALUES (1,'PATRICK','patrick@gmail.com',1000000),(2,'TRAVIS','travis@gmail.com',50000),(3,'RYAN','ryan@gmail.com',800000),(4,'LOU','lou@gmail.com',42000),(5,'BRUCE','bruce@gmail.com',6000000),(6,'WALTER','walter@gmail.com',900000),(7,'JESSE','jesse@gmail.com',60000),(8,'SAUL','saul@gmail.com',110000),(9,'MORBIUS','morbius@gmail.com',80000),(10,'BILLY','billy@gmail.com',60000);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -76,4 +77,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-07-20  2:08:42
+-- Dump completed on 2022-07-20 20:51:57

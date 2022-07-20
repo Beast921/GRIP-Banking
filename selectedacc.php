@@ -12,7 +12,7 @@
     $query=mysqli_query($conn,$sql);
     $sql1=mysqli_fetch_array($query);
 
-    $sql="SELECT * FROM user where id='$to_id' and name='$to_name'";
+    $sql="SELECT * FROM user where id='$to_id' and `name`='$to_name'";
     $query=mysqli_query($conn,$sql);
     $sql2=mysqli_fetch_array($query);
 
